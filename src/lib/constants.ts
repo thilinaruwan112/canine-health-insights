@@ -52,14 +52,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Dhanshka',
     role: 'Software Engineer',
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
-    email: 'dhanshka.name.ict20838@fot.sjp.ac.lk', // Unique email
+    email: 'dhanshka.ict20838@fot.sjp.ac.lk', // Unique email (assuming 'Dhanshka' is first name)
     imageUrl: 'https://placehold.co/200x200.png',
     dataAiHint: 'man professional'
   },
-  // Supervision Team
+  // Supervision Team - ONLY Mr. Chamila Karunathilaka
   {
     name: 'Mr Chamila Karunathilaka',
-    role: 'Senior Lecturer', // This role will be picked up by the supervisor filter
+    role: 'Senior Lecturer', // This role will be picked up by the supervision filter
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
     email: 'chamila.k@sjp.ac.lk',
     imageUrl: 'https://placehold.co/200x200.png',
