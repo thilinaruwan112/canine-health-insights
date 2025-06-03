@@ -33,7 +33,7 @@ img_hsv = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2HSV)`,
     icon: <ScanSearch className="h-10 w-10 text-primary" />,
     title: 'Feature Extraction',
     content: "From the preprocessed images, a set of quantitative features are extracted. These features aim to capture the visual characteristics of the tongue related to its health. Examples include: color histograms (to represent the distribution of colors), statistical measures of color channels (mean, standard deviation in specific color spaces like Lab), and potentially texture descriptors (e.g., Local Binary Patterns - LBP, Haralick textures) if initial analysis suggests texture is a significant differentiator. The selection of features is an iterative process, guided by domain knowledge and feature importance analysis.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1699374601777-a699fe4188d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8ZG9nJTIwaW1hZ2V8ZW58MHx8fHwxNzQ4OTM5NjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "data analysis chart",
   },
   {
