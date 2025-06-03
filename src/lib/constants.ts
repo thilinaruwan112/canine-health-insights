@@ -44,7 +44,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Nadun Abeykon',
     role: 'Software Engineer',
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
-    email: 'ict20838@fot.sjp.ac.lk',
+    email: 'ict20838@fot.sjp.ac.lk', 
     imageUrl: 'https://placehold.co/200x200.png',
     dataAiHint: 'man professional'
   },
@@ -52,7 +52,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Dhanshka',
     role: 'Software Engineer',
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
-    email: 'ict20838@fot.sjp.ac.lk',
+    email: 'ict20838@fot.sjp.ac.lk', 
     imageUrl: 'https://placehold.co/200x200.png',
     dataAiHint: 'man professional'
   },
