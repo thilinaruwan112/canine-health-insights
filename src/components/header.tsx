@@ -1,3 +1,4 @@
+
 "use client";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -7,7 +8,7 @@ import Logo from './logo';
 import { ModeToggle } from './mode-toggle';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from './ui/sheet';
-import { NAV_LINKS, type NavLink } from '@/lib/constants';
+import { HEADER_NAV_LINKS, type NavLink } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -28,7 +29,7 @@ export default function Header() {
   }
 
   const renderNavLinks = (isMobile = false) =>
-    NAV_LINKS.map((link: NavLink) => (
+    HEADER_NAV_LINKS.map((link: NavLink) => (
       <Link
         key={link.href}
         href={link.href}

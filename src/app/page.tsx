@@ -1,10 +1,11 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import PageWrapper from '@/components/page-wrapper';
 import SectionWrapper from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Lightbulb, FlaskConical, Users } from 'lucide-react';
+import { Lightbulb, FlaskConical, Users, Eye, Sparkles, BrainCircuit, BarChartBig } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -40,8 +41,82 @@ export default function HomePage() {
         </Card>
       </SectionWrapper>
 
-      {/* Key Features Section */}
-      <SectionWrapper title="Key Aspects of Our Research" id="features">
+      {/* Our Vision Section */}
+      <SectionWrapper title="Our Vision for Canine Health" id="vision">
+        <Card className="shadow-lg overflow-hidden">
+          <div className="md:flex items-center">
+            <div className="md:w-1/3">
+              <Image
+                src="https://placehold.co/600x400.png"
+                alt="Healthy dog looking alert"
+                width={600}
+                height={400}
+                className="object-cover w-full h-48 md:h-full"
+                data-ai-hint="healthy dog outdoors"
+              />
+            </div>
+            <div className="md:w-2/3 p-6 md:p-8">
+              <div className="flex items-center mb-3">
+                <div className="bg-primary/10 text-primary p-3 rounded-full mr-4">
+                  <Eye className="h-8 w-8" />
+                </div>
+                <h3 className="font-headline text-2xl text-primary">Pioneering Proactive Pet Care</h3>
+              </div>
+              <p className="text-md text-foreground/90 leading-relaxed mb-4">
+                We envision a future where technology empowers pet owners and veterinarians with accessible, non-invasive tools for early health detection. Our research aims to translate complex visual data from a dog&apos;s tongue into actionable insights, fostering a proactive approach to canine wellness and ultimately enhancing the bond between pets and their families.
+              </p>
+              <Button asChild variant="link" className="px-0 text-accent">
+                <Link href="/about">Discover Our Mission <span aria-hidden="true" className="ml-1">→</span></Link>
+              </Button>
+            </div>
+          </div>
+        </Card>
+      </SectionWrapper>
+      
+      {/* Key Discoveries Section */}
+      <SectionWrapper title="Key Discoveries & Innovations" id="discoveries">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+          <Card className="text-left hover:shadow-xl transition-shadow duration-300">
+            <CardHeader>
+              <div className="flex items-center mb-2">
+                <div className="bg-primary/10 text-primary p-3 rounded-full mr-3">
+                  <BrainCircuit className="h-7 w-7" />
+                </div>
+                <CardTitle className="font-headline text-xl">AI-Powered Tongue Analysis</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="mb-3">
+                Our system leverages advanced machine learning models to interpret subtle visual cues in canine tongue images, identifying patterns that may correlate with health status.
+              </CardDescription>
+              <Button asChild variant="outline" size="sm">
+                <Link href="/methodology">Explore Methodology</Link>
+              </Button>
+            </CardContent>
+          </Card>
+          <Card className="text-left hover:shadow-xl transition-shadow duration-300">
+            <CardHeader>
+              <div className="flex items-center mb-2">
+                <div className="bg-primary/10 text-primary p-3 rounded-full mr-3">
+                  <BarChartBig className="h-7 w-7" />
+                </div>
+                <CardTitle className="font-headline text-xl">Promising Classification Accuracy</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="mb-3">
+                Initial findings demonstrate the model&apos;s capability to distinguish between 'Healthy' and 'Pale' tongue characteristics with encouraging accuracy, paving the way for a reliable screening tool.
+              </CardDescription>
+              <Button asChild variant="outline" size="sm">
+                <Link href="/results">View Results</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </SectionWrapper>
+
+      {/* Original Key Aspects Section - re-using for core values */}
+      <SectionWrapper title="Core Values of Our Research" id="features">
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           <Card className="text-center hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
@@ -61,7 +136,7 @@ export default function HomePage() {
               <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit mb-4">
                 <FlaskConical className="h-8 w-8" />
               </div>
-              <CardTitle className="font-headline text-xl">Scientific Methodology</CardTitle>
+              <CardTitle className="font-headline text-xl">Scientific Rigor</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription>
@@ -74,27 +149,30 @@ export default function HomePage() {
               <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit mb-4">
                 <Users className="h-8 w-8" />
               </div>
-              <CardTitle className="font-headline text-xl">Collaborative Effort</CardTitle>
+              <CardTitle className="font-headline text-xl">Collaborative Spirit</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription>
-                A multidisciplinary team of students and supervisors dedicated to advancing canine health.
+                A multidisciplinary team dedicated to advancing canine health through shared expertise.
               </CardDescription>
             </CardContent>
           </Card>
         </div>
       </SectionWrapper>
       
-      {/* Call to Action Section */}
-      <SectionWrapper className="text-center">
-         <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-foreground mb-4">
-            Explore Our Research
+      {/* Meet the Team CTA Section */}
+      <SectionWrapper className="text-center bg-muted/50 py-12 md:py-16 rounded-lg">
+         <div className="mx-auto bg-primary/10 text-primary p-4 rounded-full w-fit mb-4">
+            <Users className="h-10 w-10" />
+          </div>
+         <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-foreground mb-3">
+            Meet the Minds Behind the Mission
           </h2>
         <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-          Dive deeper into our methodology, findings, and the future of this exciting project.
+          Our dedicated team of researchers, students, and supervisors is passionate about making a difference in veterinary science.
         </p>
         <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-          <Link href="/methodology">Discover Our Methods</Link>
+          <Link href="/team">Discover Our Team</Link>
         </Button>
       </SectionWrapper>
     </PageWrapper>

@@ -1,20 +1,25 @@
+
 export type NavLink = {
   href: string;
   label: string;
 };
 
-export const NAV_LINKS: NavLink[] = [
+export const HEADER_NAV_LINKS: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/methodology', label: 'Methodology' },
-  { href: '/system-architecture', label: 'System Architecture' },
   { href: '/results', label: 'Results' },
-  { href: '/literature-review', label: 'Literature Review' },
-  { href: '/team', label: 'Team' },
-  { href: '/future-work', label: 'Future Work' },
   { href: '/demo', label: 'Demo' },
   { href: '/contact', label: 'Contact' },
 ];
+
+export const FOOTER_PAGE_LINKS: NavLink[] = [
+  { href: '/system-architecture', label: 'System Architecture' },
+  { href: '/literature-review', label: 'Literature Review' },
+  { href: '/team', label: 'Team' },
+  { href: '/future-work', label: 'Future Work' },
+];
+
 
 export type TeamMember = {
   name: string;
