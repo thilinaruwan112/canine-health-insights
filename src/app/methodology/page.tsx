@@ -70,12 +70,12 @@ export default function MethodologyPage() {
                       />
                     </div>
                   )}
-                  <div className={`p-6 md:p-8 ${step.image ? 'md:w-1/2' : 'md:w-full'}`}>
+                  <div className={`p-6 md:p-8 ${step.image ? 'md:w-1/2 flex flex-col' : 'md:w-full'}`}>
                     <div className="flex items-center mb-4">
                       {step.icon}
                       <CardTitle className="font-headline text-2xl ml-3">{step.title}</CardTitle>
                     </div>
-                    <CardContent className="pl-0">
+                    <CardContent className={`pl-0 ${step.image ? 'flex-grow' : ''}`}>
                       <p className="text-md text-foreground/90 leading-relaxed mb-4">{step.content}</p>
                       {step.codeSnippet && (
                         <div className="bg-muted p-4 rounded-md shadow-inner">
@@ -87,12 +87,12 @@ export default function MethodologyPage() {
                 </>
               ) : (
                 <>
-                  <div className={`p-6 md:p-8 ${step.image ? 'md:w-1/2' : 'md:w-full'}`}>
+                  <div className={`p-6 md:p-8 ${step.image ? 'md:w-1/2 flex flex-col' : 'md:w-full'}`}>
                     <div className="flex items-center mb-4">
                       {step.icon}
                       <CardTitle className="font-headline text-2xl ml-3">{step.title}</CardTitle>
                     </div>
-                    <CardContent className="pl-0">
+                    <CardContent className={`pl-0 ${step.image ? 'flex-grow' : ''}`}>
                       <p className="text-md text-foreground/90 leading-relaxed mb-4">{step.content}</p>
                       {step.codeSnippet && (
                         <div className="bg-muted p-4 rounded-md shadow-inner">
