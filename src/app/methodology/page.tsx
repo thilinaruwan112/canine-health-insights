@@ -15,7 +15,7 @@ const methodologySteps = [
     icon: <Camera className="h-10 w-10 text-primary" />,
     title: 'Image Collection',
     content: "A dataset of canine tongue images was ethically sourced from various veterinary clinics and consenting pet owners. Efforts were made to capture images under consistent lighting conditions where possible, though variability is an expected challenge. Each image was labeled by veterinary professionals as 'Healthy' or 'Pale', forming the ground truth for our supervised learning model. Metadata such as breed, age, and lighting conditions were also recorded when available to aid in analysis.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1523461811963-7f1023caeddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbWFnZSUyMGNvbGxlY3Rpb258ZW58MHx8fHwxNzQ4OTM5NTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "dog tongue collection",
   },
   {
@@ -26,7 +26,7 @@ const methodologySteps = [
 # Example: Convert RGB to HSV
 img_rgb = cv2.imread('tongue_image.jpg')
 img_hsv = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2HSV)`,
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1579781403299-11c35baa47e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8SW1hZ2UlMjBQcmVwcm9jZXNzaW5nfGVufDB8fHx8MTc0ODkzOTU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "image processing",
   },
   {
