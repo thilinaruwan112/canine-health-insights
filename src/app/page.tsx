@@ -47,12 +47,12 @@ export default function HomePage() {
           <div className="md:flex items-center">
             <div className="md:w-1/3">
               <Image
-                src="https://placehold.co/600x400.png"
+                src="https://images.unsplash.com/photo-1556866261-8763a7662333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8ZG9nc3xlbnwwfHx8fDE3NDg5Mzk2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Healthy dog looking alert"
                 width={600}
                 height={400}
                 className="object-cover w-full h-48 md:h-full"
-                data-ai-hint="healthy dog outdoors"
+                data-ai-hint="data analysis chart"
               />
             </div>
             <div className="md:w-2/3 p-6 md:p-8">
