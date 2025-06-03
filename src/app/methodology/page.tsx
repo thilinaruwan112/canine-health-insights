@@ -45,7 +45,7 @@ img_hsv = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2HSV)`,
 # Example: Initialize XGBoost model
 model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
 model.fit(X_train, y_train)`,
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8ZG9nfGVufDB8fHx8MTc0ODkwODgzMHww&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "machine learning model",
   },
 ];
