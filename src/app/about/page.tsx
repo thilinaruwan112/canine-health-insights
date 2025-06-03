@@ -1,7 +1,7 @@
 import PageWrapper from '@/components/page-wrapper';
 import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Target, HelpCircle, ListChecks, Scope } from 'lucide-react';
+import { Target, HelpCircle, ListChecks, Focus } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ const aboutSections = [
     ],
   },
   {
-    icon: <Scope className="h-12 w-12 text-primary mb-4" />,
+    icon: <Focus className="h-12 w-12 text-primary mb-4" />,
     title: 'Scope',
     content: "This project focuses on the binary classification of canine tongues as 'Healthy' or 'Pale' based on color and texture features discernible from digital images. The scope includes image acquisition strategies, data preprocessing, feature engineering, model training with XGBoost, and performance evaluation. It does not aim to provide a definitive medical diagnosis but rather a preliminary screening tool. The study will primarily use a dataset collected specifically for this research. While the long-term vision includes a broader range of classifications and integration into a mobile application, this phase concentrates on establishing the proof-of-concept for the binary classification task.",
   },
