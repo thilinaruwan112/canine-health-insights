@@ -33,6 +33,8 @@ export type TeamMember = {
 export const TEAM_MEMBERS: TeamMember[] = [
   { name: 'Alice Wonderland', role: 'Student Researcher', department: 'Computer Science', email: 'alice@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman student' },
   { name: 'Bob The Builder', role: 'Student Researcher', department: 'Veterinary Medicine', email: 'bob@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
+  { name: 'Dhanushka Thilina Ruwan', role: 'Student Researcher', department: 'Software Engineering', email: 'dhanushka@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
+  { name: 'Nadun Abayakon', role: 'Student Researcher', department: 'Data Science', email: 'nadun@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
   { name: 'Dr. Eva Rostova', role: 'Supervisor', department: 'AI & Machine Learning', email: 'eva.r@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
   { name: 'Prof. Charles Xavier', role: 'Supervisor', department: 'Canine Health Studies', email: 'charles.x@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man professor' },
 ];
