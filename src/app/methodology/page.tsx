@@ -1,3 +1,4 @@
+
 import PageWrapper from '@/components/page-wrapper';
 import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -15,7 +16,7 @@ const methodologySteps = [
     icon: <Camera className="h-10 w-10 text-primary" />,
     title: 'Image Collection',
     content: "A dataset of canine tongue images was ethically sourced from various veterinary clinics and consenting pet owners. Efforts were made to capture images under consistent lighting conditions where possible, though variability is an expected challenge. Each image was labeled by veterinary professionals as 'Healthy' or 'Pale', forming the ground truth for our supervised learning model. Metadata such as breed, age, and lighting conditions were also recorded when available to aid in analysis.",
-    image: "https://images.unsplash.com/photo-1529472119196-cb724127a98e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTc0ODkzOTY4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.unsplash.com/photo-1597633425046-08f5110420b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8ZG9nfGVufDB8fHx8MTc0ODkwODgzMHww&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "dog tongue collection",
   },
   {
