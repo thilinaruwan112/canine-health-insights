@@ -27,7 +27,7 @@ const methodologySteps = [
 # Example: Convert RGB to HSV
 img_rgb = cv2.imread('tongue_image.jpg')
 img_hsv = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2HSV)`,
-    image: "https://images.unsplash.com/photo-1579781403299-11c35baa47e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8SW1hZ2UlMjBQcmVwcm9jZXNzaW5nfGVufDB8fHx8MTc0ODkzOTU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2dzfGVufDB8fHx8MTc0ODkzOTY4MXww&ixlib=rb-4.1.0&q=80&w=1080",
     dataAiHint: "image processing",
   },
   {
