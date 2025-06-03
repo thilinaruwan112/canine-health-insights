@@ -152,7 +152,7 @@ export default function UploadForm() {
                       <AlertTriangle className="h-5 w-5" />
                       <AlertTitle>Image Analysis Result</AlertTitle>
                       <AlertDescription>
-                        {result.prediction.analysisNotes || "The uploaded image was not identified as a dog's tongue suitable for health prediction, or the analysis was inconclusive."}
+                        {result.prediction.isDogTongue === false ? "The uploaded image was not identified as a dog's tongue suitable for health prediction." : (result.prediction.analysisNotes || "The analysis was inconclusive or the image was not suitable for prediction.")}
                       </AlertDescription>
                     </Alert>
                   )}
