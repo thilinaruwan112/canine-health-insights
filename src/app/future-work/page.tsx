@@ -1,7 +1,7 @@
 import PageWrapper from '@/components/page-wrapper';
 import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Lightbulb, Layers, Smartphone, DatabaseZap, Users2 } from 'lucide-react';
+import { Lightbulb, Layers, Smartphone, DatabaseZap, Users2, FlaskConical } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
