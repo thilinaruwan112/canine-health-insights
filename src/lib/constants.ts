@@ -31,15 +31,80 @@ export type TeamMember = {
 };
 
 export const TEAM_MEMBERS: TeamMember[] = [
-  { name: 'Alice Wonderland', role: 'Student Researcher', department: 'Computer Science', email: 'alice@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman student' },
-  { name: 'Bob The Builder', role: 'Student Researcher', department: 'Veterinary Medicine', email: 'bob@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
-  { name: 'Dhanushka Thilina Ruwan', role: 'Student Researcher', department: 'Software Engineering', email: 'dhanushka@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
-  { name: 'Nadun Abayakon', role: 'Student Researcher', department: 'Data Science', email: 'nadun@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
-  { name: 'Dr. Eva Rostova', role: 'Supervisor', department: 'AI & Machine Learning', email: 'eva.r@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
-  { name: 'Prof. Charles Xavier', role: 'Supervisor', department: 'Canine Health Studies', email: 'charles.x@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man professor' },
-  { name: 'Dr. Olivia Chen', role: 'Supervisor', department: 'Veterinary Imaging', email: 'olivia.c@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
-  { name: 'Prof. Samuel Green', role: 'Supervisor', department: 'Ethics in AI Research', email: 'samuel.g@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man professor' },
-  { name: 'Dr. Aisha Khan', role: 'Supervisor', department: 'Public Health & Zoonotics', email: 'aisha.k@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
+  // Software Engineers / Students
+  { 
+    name: 'Thilina Ruwan', 
+    role: 'Software Engineer', 
+    department: 'Faculty of Technology, University of Sri Jayewardenepura', 
+    email: 'ict20838@fot.sjp.ac.lk', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'man professional' 
+  },
+  { 
+    name: 'Nadun Abeykon', 
+    role: 'Software Engineer', 
+    department: 'Faculty of Technology, University of Sri Jayewardenepura', 
+    email: 'ict20838@fot.sjp.ac.lk', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'man professional' 
+  },
+  { 
+    name: 'Dhanshka', 
+    role: 'Software Engineer', 
+    department: 'Faculty of Technology, University of Sri Jayewardenepura', 
+    email: 'ict20838@fot.sjp.ac.lk', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'man professional' 
+  },
+  // Supervisors
+  { 
+    name: 'Mr Chamila Karunathilaka', 
+    role: 'Senior Lecturer', 
+    department: 'Faculty of Technology, University of Sri Jayewardenepura', 
+    email: 'chamila.k@sjp.ac.lk', // Placeholder, adjust if needed
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'man professor' 
+  },
+  { 
+    name: 'Dr. Eva Rostova', 
+    role: 'Supervisor', 
+    department: 'AI & Machine Learning', 
+    email: 'eva.r@example.com', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'woman professor' 
+  },
+  { 
+    name: 'Prof. Charles Xavier', 
+    role: 'Supervisor', 
+    department: 'Canine Health Studies', 
+    email: 'charles.x@example.com', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'man professor' 
+  },
+  { 
+    name: 'Dr. Olivia Chen', 
+    role: 'Supervisor', 
+    department: 'Veterinary Imaging', 
+    email: 'olivia.c@example.com', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'woman professor' 
+  },
+  { 
+    name: 'Prof. Samuel Green', 
+    role: 'Supervisor', 
+    department: 'Ethics in AI Research', 
+    email: 'samuel.g@example.com', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'man professor' 
+  },
+  { 
+    name: 'Dr. Aisha Khan', 
+    role: 'Supervisor', 
+    department: 'Public Health & Zoonotics', 
+    email: 'aisha.k@example.com', 
+    imageUrl: 'https://placehold.co/200x200.png', 
+    dataAiHint: 'woman professor' 
+  },
 ];
 
 export type SocialLink = {
