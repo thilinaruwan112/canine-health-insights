@@ -31,12 +31,12 @@ export type TeamMember = {
 };
 
 export const TEAM_MEMBERS: TeamMember[] = [
-  // Software Engineers / Project Team
+  // Project Team
   {
     name: 'Thilina Ruwan',
     role: 'Software Engineer',
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
-    email: 'thilina.ict20838@fot.sjp.ac.lk', // Made unique
+    email: 'thilina.ruwan.ict20838@fot.sjp.ac.lk', // Unique email
     imageUrl: 'https://placehold.co/200x200.png',
     dataAiHint: 'man professional'
   },
@@ -44,7 +44,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Nadun Abeykon',
     role: 'Software Engineer',
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
-    email: 'nadun.ict20838@fot.sjp.ac.lk', // Made unique
+    email: 'nadun.abeykon.ict20838@fot.sjp.ac.lk', // Unique email
     imageUrl: 'https://placehold.co/200x200.png',
     dataAiHint: 'man professional'
   },
@@ -52,14 +52,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Dhanshka',
     role: 'Software Engineer',
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
-    email: 'dhanshka.ict20838@fot.sjp.ac.lk', // Made unique
+    email: 'dhanshka.name.ict20838@fot.sjp.ac.lk', // Unique email
     imageUrl: 'https://placehold.co/200x200.png',
     dataAiHint: 'man professional'
   },
-  // Supervisor
+  // Supervision Team
   {
     name: 'Mr Chamila Karunathilaka',
-    role: 'Senior Lecturer',
+    role: 'Senior Lecturer', // This role will be picked up by the supervisor filter
     department: 'Faculty of Technology, University of Sri Jayewardenepura',
     email: 'chamila.k@sjp.ac.lk',
     imageUrl: 'https://placehold.co/200x200.png',
@@ -72,4 +72,3 @@ export type SocialLink = {
   href: string;
   icon: React.ElementType;
 }
-
