@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useRef, type FormEvent } from "react";
@@ -6,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Loader2, UploadCloud, CheckCircle, XCircle } from "lucide-react";
+import { Loader2, UploadCloud, CheckCircle, XCircle, AlertTriangle } from "lucide-react";
 import Image from "next/image";
 import { getHealthPrediction, type HealthPredictionState } from "@/app/actions";
 
@@ -116,21 +117,46 @@ export default function UploadForm() {
 
           {result && !isLoading && (
             <div className="mt-6">
-              {result.error && (
+              {result.error && ( // Handle action errors first
                 <Alert variant="destructive">
                   <XCircle className="h-5 w-5" />
                   <AlertTitle>Error</AlertTitle>
                   <AlertDescription>{result.error}</AlertDescription>
                 </Alert>
               )}
-              {result.prediction && (
-                 <Alert className={`${result.prediction.healthPrediction === "Healthy" ? "bg-green-50 border-green-200 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300" : "bg-yellow-50 border-yellow-300 text-yellow-800 dark:bg-yellow-900/30 dark:border-yellow-700 dark:text-yellow-300"}`}>
-                  {result.prediction.healthPrediction === "Healthy" ? <CheckCircle className="h-5 w-5" /> : <XCircle className="h-5 w-5"/>}
-                  <AlertTitle>Prediction Result</AlertTitle>
-                  <AlertDescription>
-                    The predicted tongue health is: <span className="font-bold">{result.prediction.healthPrediction}</span>
-                  </AlertDescription>
-                </Alert>
+              {result.prediction && !result.error && ( // Only show prediction if no action error
+                <>
+                  {result.prediction.isDogTongue && result.prediction.healthPrediction ? (
+                    <Alert
+                      className={`${
+                        result.prediction.healthPrediction === "Healthy"
+                          ? "bg-green-50 border-green-200 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300"
+                          : "bg-yellow-50 border-yellow-300 text-yellow-800 dark:bg-yellow-900/30 dark:border-yellow-700 dark:text-yellow-300"
+                      }`}
+                    >
+                      {result.prediction.healthPrediction === "Healthy" ? (
+                        <CheckCircle className="h-5 w-5" />
+                      ) : (
+                        <AlertTriangle className="h-5 w-5" />
+                      )}
+                      <AlertTitle>Prediction Result</AlertTitle>
+                      <AlertDescription>
+                        The predicted tongue health is: <span className="font-bold">{result.prediction.healthPrediction}</span>.
+                        {result.prediction.analysisNotes && (
+                          <p className="text-sm mt-1">Notes: {result.prediction.analysisNotes}</p>
+                        )}
+                      </AlertDescription>
+                    </Alert>
+                  ) : (
+                    <Alert variant="default" className="bg-orange-50 border-orange-200 text-orange-700 dark:bg-orange-900/30 dark:border-orange-700 dark:text-orange-300">
+                      <AlertTriangle className="h-5 w-5" />
+                      <AlertTitle>Image Analysis Result</AlertTitle>
+                      <AlertDescription>
+                        {result.prediction.analysisNotes || "The uploaded image was not identified as a dog's tongue suitable for health prediction, or the analysis was inconclusive."}
+                      </AlertDescription>
+                    </Alert>
+                  )}
+                </>
               )}
             </div>
           )}
