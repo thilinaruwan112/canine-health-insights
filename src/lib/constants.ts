@@ -37,6 +37,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
   { name: 'Nadun Abayakon', role: 'Student Researcher', department: 'Data Science', email: 'nadun@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man student' },
   { name: 'Dr. Eva Rostova', role: 'Supervisor', department: 'AI & Machine Learning', email: 'eva.r@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
   { name: 'Prof. Charles Xavier', role: 'Supervisor', department: 'Canine Health Studies', email: 'charles.x@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man professor' },
+  { name: 'Dr. Olivia Chen', role: 'Supervisor', department: 'Veterinary Imaging', email: 'olivia.c@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
+  { name: 'Prof. Samuel Green', role: 'Supervisor', department: 'Ethics in AI Research', email: 'samuel.g@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'man professor' },
+  { name: 'Dr. Aisha Khan', role: 'Supervisor', department: 'Public Health & Zoonotics', email: 'aisha.k@example.com', imageUrl: 'https://placehold.co/200x200.png', dataAiHint: 'woman professor' },
 ];
 
 export type SocialLink = {
