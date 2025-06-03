@@ -5,7 +5,7 @@ import PageWrapper from '@/components/page-wrapper';
 import SectionWrapper from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Lightbulb, FlaskConical, Users, Eye, Sparkles, BrainCircuit, BarChartBig } from 'lucide-react';
+import { Lightbulb, FlaskConical, Users, Sparkles, BrainCircuit, BarChartBig } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -58,15 +58,15 @@ export default function HomePage() {
             <div className="md:w-2/3 p-6 md:p-8">
               <div className="flex items-center mb-3">
                 <div className="bg-primary/10 text-primary p-3 rounded-full mr-4">
-                  <Eye className="h-8 w-8" />
+                  <Sparkles className="h-8 w-8" />
                 </div>
-                <h3 className="font-headline text-2xl text-primary">Pioneering Proactive Pet Care</h3>
+                <h3 className="font-headline text-2xl text-primary">Our Vision for Canine Health</h3>
               </div>
               <p className="text-md text-foreground/90 leading-relaxed mb-4">
                 We envision a future where technology empowers pet owners and veterinarians with accessible, non-invasive tools for early health detection. Our research aims to translate complex visual data from a dog&apos;s tongue into actionable insights, fostering a proactive approach to canine wellness and ultimately enhancing the bond between pets and their families.
               </p>
               <Button asChild variant="link" className="px-0 text-accent">
-                <Link href="/about">Discover Our Mission <span aria-hidden="true" className="ml-1">→</span></Link>
+                <Link href="/about">Learn About Our Vision <span aria-hidden="true" className="ml-1">→</span></Link>
               </Button>
             </div>
           </div>
